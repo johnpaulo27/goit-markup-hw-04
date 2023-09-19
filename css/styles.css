@@ -22,7 +22,7 @@ header {
     align-items: center;
     display: inline-flex;
 }
-.nav-menu {
+.navigation {
     align-items: center;
     display: inline-flex;
 }
@@ -115,18 +115,23 @@ h2 {
     font-family: Roboto;
     font-size: 36px;
 }
-body h3 {
-    font-family: Roboto, sans-serif;
-    font-size: 36px;
-}
-.feature {
+.feature-section {
+    display: inline-flex;
     margin-left: 35px;
     margin-right: 35px;
 }
 .features {
-    display: flex;
+    display: inline-flex;
     padding: 80px 120px ;
     gap: 24px;
+}
+.feature-images {
+    padding: 120px 156px;
+    display: inline-flex;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
 }
 .transactions {
     text-align: center;
@@ -166,11 +171,20 @@ h5 {
     width: 264;
     height: 260px;
 }
+.our-team-links-item {
+    background-color: #4D5AE5;
+    display: inline-flex;
+    margin-left: 0px;
+    margin-right: 20px;
+    padding: 12px;
+    border-radius: 50%;
+}
 .footer-section {
     background-color: #2E2F42;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    height: 312px;
 }
 footer a {
     text-decoration: none;
@@ -178,24 +192,29 @@ footer a {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-style: normal;
+    height: 320px;
 }
 .second-logo span:first-child {
     text-decoration: none;
     font-family:'Raleway', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
-    color: #4D5AE5;  
+    color: #4D5AE5;
+    display: inline-flex;
+    padding-top: 109px;
+    padding-left: 156px;
+}
+footer p {
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    padding-left: 156px;
+    padding-right: 1015px;
 }
 .second-logo span:last-child {
     font-family:'Raleway', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     color: white;
-}
-.footer-section {
-    color: white;
-    background-size: cover;
-    background-size: 1440px 312px;
 }
 .project-card-list {
     box-sizing: border-box;
