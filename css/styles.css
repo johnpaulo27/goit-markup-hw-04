@@ -96,7 +96,7 @@ body {
     padding: 120px 0px;
 }
 .hero {
-    background-image: url(/images/people-office.png);
+    background-image: url(../images/people-office.png);
     linear-gradient: var((--grey), rgba(46, 47, 66, 0.7), rgba(25, 28, 38, 0.2));
     background-repeat: no-repeat;
     background-size: cover;
