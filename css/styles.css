@@ -29,6 +29,8 @@ a {
 }
 .page-header {
     border-bottom: 1px solid var(--cornflower);
+    padding-top: 32px;
+    padding-bottom: 31px;
 }
 body {
     font-family: Roboto, sans-serif;
@@ -56,8 +58,6 @@ body {
 .navigation { 
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
     color: var(--navyblue);
     font-weight: 500;
     font-size: 16px;
@@ -96,8 +96,8 @@ body {
     padding: 120px 0px;
 }
 .hero {
-    background-image: url(../images/people-office.png);
-    linear-gradient: var((--grey), rgba(46, 47, 66, 0.7), rgba(25, 28, 38, 0.2));
+    background-image: linear-gradient(rgba(46,47,66,0.7),rgba(46,47,66,0.7)),
+    url(../images/people-office.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 188px 0px;
@@ -308,7 +308,7 @@ body {
 }
 .footer-social-item:hover,
 .footer-social-item:focus {
-    background-color: var(--ocean);
+    background-color: var(--green);
 }
 .customers-list {
     display: flex;
@@ -317,16 +317,22 @@ body {
     justify-content: center;
     padding: 0px 156px;
     margin-bottom: 120px;
+    
 }
-.customers-item {
+.customers-item,
+.customers-link {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border-color: var(--navyblue);
+    border-style: calc(100% - 30%);
 }
-.customer-svg:hover,
-.customer-svg:focus {
-  border-color: var(--grey);
-  color: var(--grey);
+.customers-item:hover,
+.customers-item:focus{
+  border-radius: 4px;
+  border: 2px solid var(--ocean);
+  fill: "var(--ocean)";
+}
+.customers-link:hover svg {
+    fill: var(--ocean);
 }
